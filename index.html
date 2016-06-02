@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Path Maker</title>
+        <link rel="stylesheet" href="css/pathmaker.css"/>
+        <script src="js/jquery-min.js"></script>
+        <script src="js/front.js"></script>
+    </head>
+    <body>
+        <div id="get-data-box" class="hidden">
+            <textarea id="get-data-tbox"></textarea>
+            <input type="button" id="close-databox-button" value="Close" class="sidebar-button"/>
+        </div>
+        <!--<div id="site-header"></div>-->
+        <div id="sidebar">
+            <p id="console">
+                ### This is the console. ### <br /> <br /> Specify first the filename of the
+                map you want to load from the "maps" folder.
+            </p>
+            <input type="button" id="print-data" value="Show Data" class="sidebar-button"/>
+            <input type="button" id="undo" value="Undo Add" class="sidebar-button"/>
+            <input type="button" id="link-mode" value="Link Mode" class="sidebar-button"/>
+            <input disabled type="button" id="undo-link" value="Undo Link" class="sidebar-button"/>
+            <p>Point Type:</p>
+            <div id="pt-sel-container">
+                <input type="button" class="pt-sel-button selected" value="Move Point" data-pt="go" id="go-pt-sel-button"/>
+                <input type="button" class="pt-sel-button" value="Dead Point" data-pt="dead" id="dead-pt-sel-button"/>
+            </div>
+            <p>Map Image:</p>
+            <input type="text" id="map-filename-input" class="animate2s" placeholder="File Name"/>
+            <input type="button" id="load-map" value="Load Map" class="sidebar-button"/>
+            <a href="simulator.html"><input type="button" id="show-hide-map" value="Simulate" class="sidebar-button"/></a>
+            <p>Snap Control Panel:</p>
+            <input type="button" id="cp-left" value="Left" class="sidebar-button"/>
+            <input type="button" id="cp-right" value="Right" class="sidebar-button"/>
+        </div>
+        <div id="map-area">
+            <div id="map-click"></div>
+            <input type="button" id="link-done-button" class="hidden" value="Done"/>
+            <div id="map-pointer" class="hidden"></div>
+        </div>
+    </body>
+</html>

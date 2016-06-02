@@ -1,0 +1,205 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI';
+}
+textarea{
+    font-family: 'Segoe UI';
+    font-size: 16px;
+}
+
+#site-header{
+    position: fixed;
+    top: 0px;
+    height: 70px;
+    width:  100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#map-area{
+    height: 1200px;
+    width:  1200px;
+    background-color: rgb(230, 230, 230);
+    margin: auto;
+    position: relative;
+
+}
+#map-click{
+    /*background-image: url('/resources/maps/8.png');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#map-pointer{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 7px;
+}
+.car-container-1{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top:  100px;
+    left: 455px;
+    background-image: url('/resources/cars/taxi.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-123deg);
+}
+#sidebar{
+    position: fixed;
+    height:  100%;
+    width:  250px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 500;
+    text-align: center;
+}
+#console{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    height: 180px;
+    overflow: auto;
+    font-size: 13px;
+    background-color: rgb(240, 240, 240);
+}
+.pin-pointer{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 7px;
+    z-index: 100;
+    -webkit-transition: all 0.1s linear;
+       -moz-transition: all 0.1s linear;
+         -o-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+}
+.go-pt{
+    border: 2px solid seagreen;
+}
+.dead-pt{
+    border: 2px solid rgb(100, 100, 100);
+}
+.path-tracer{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 100px;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid goldenrod;
+    -webkit-transition: all 0.7s linear;
+       -moz-transition: all 0.7s linear;
+         -o-transition: all 0.7s linear;
+            transition: all 0.7s linear;
+}
+.animate2s{
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+.sidebar-button{
+    height: 30px;
+    margin-bottom: 5px;
+    width: 100px;
+    background-color: white;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#pt-sel-container{
+    text-align: center;
+    height: 30px;
+}
+.pt-sel-button{
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(220, 220, 220);
+}
+.selected{
+    background-color: rgb(220, 220, 220);
+}
+#go-pt-sel{
+    border: 2px solid seagreen;
+}
+#caution-pt-sel{
+    border: 2px solid goldenrod;
+}
+#stop-pt-sel{
+    border: 2px solid indianred;
+}
+#dead-pt-sel{
+    border: 2px solid rgb(100, 100, 100);
+}
+.branch-pt{
+    background-color: rgba(46, 139, 87, 0.3);
+}
+.root-pt{
+    background-color: SeaGreen;
+}
+
+#link-done-button{
+    position: fixed;
+    height: 30px;
+    width: 80px;
+    margin: auto;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    background-color: darkcyan;
+    border: 0px;
+    border-radius: 15px;
+    color: white;
+}
+#map-filename-input{
+    height: 30px;
+    width: 85%;
+    padding-left: 5px;
+    border: 0px;
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 10px;
+}
+#get-data-box{
+    position: fixed;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 400px;
+    width: 500px;
+    background-color: white;
+    z-index: 1000;
+    text-align: center;
+
+}
+#get-data-tbox{
+    width: 95%;
+    height: 330px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 0px;
+    background-color: rgb(220, 220, 220);
+    overflow: auto;
+}
+p{
+    font-size: 14px;
+}
